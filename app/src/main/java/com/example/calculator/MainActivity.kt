@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         tvInput = findViewById(R.id.tvInput)
     }
-    fun OnDigit(view: View){
+    fun OnDigit(view: View) {
         tvInput?.append((view as Button).text)
         lastNumeric = true
         lastDot = false
@@ -48,9 +48,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun isOperatorAdded(value : String) : Boolean{
-        return if(value.startsWith("-")) false
+        return if(value.startsWith("-")){
+            false
+        }
         else{
-            value.contains("/") || value.contains("*") || value.contains("+") || value.contains("-")
+            value.contains("/")
+                    || value.contains("*")
+                    || value.contains("+")
+                    || value.contains("-")
+                    || value.contains("%")
         }
     }
 

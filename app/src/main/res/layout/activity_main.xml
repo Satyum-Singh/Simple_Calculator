@@ -73,7 +73,7 @@
             android:textColor="@color/keybg"
             android:layout_marginHorizontal="5sp"
             android:textSize="32sp"
-            android:onClick="OnDigit"
+            android:onClick="onOperator"
             android:textStyle="bold"
             />
     </LinearLayout>
@@ -133,7 +133,7 @@
             android:textColor="@color/keybg"
             android:layout_margin="4sp"
             android:textSize="32sp"
-            android:onClick="OnDigit"
+            android:onClick="onOperator"
             android:textStyle="bold"
             />
     </LinearLayout>
@@ -193,7 +193,7 @@
             android:textColor="@color/keybg"
             android:layout_margin="4sp"
             android:textSize="32sp"
-            android:onClick="OnDigit"
+            android:onClick="onOperator"
             android:textStyle="bold"
             />
     </LinearLayout>
@@ -253,7 +253,7 @@
             android:textColor="@color/keybg"
             android:layout_margin="4sp"
             android:textSize="32sp"
-            android:onClick="OnDigit"
+            android:onClick="onOperator"
             android:textStyle="bold"
             />
     </LinearLayout>
@@ -301,7 +301,7 @@
             android:backgroundTint="@color/clear"
             android:layout_margin="4sp"
             android:textSize="32sp"
-            android:onClick="OnDigit"
+            android:onClick="onOperator"
             android:textStyle="bold"
             />
     </LinearLayout>
