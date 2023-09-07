@@ -3,6 +3,7 @@ package com.example.calculator
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 
@@ -17,6 +18,10 @@ class MainActivity : AppCompatActivity() {
         tvInput = findViewById(R.id.tvInput)
     }
     fun OnDigit(view: View){
-        Toast.makeText(this,"Button clicked",Toast.LENGTH_SHORT).show()
+        tvInput?.append((view as Button).text)
+    }
+
+    fun onClear(view: View){
+        tvInput?.text=""
     }
 }

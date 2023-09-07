@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Calculator</string>
-    <string name="calc_text">Calculations_Area</string>
+    <string name="calc_text"></string>
 
-    <string name="all_clear">AC</string>
+    <string name="all_clear">CLR</string>
     <string name="point">.</string>
     <string name="modulus">%</string>
     <string name="divide">/</string>
