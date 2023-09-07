@@ -301,7 +301,7 @@
             android:backgroundTint="@color/clear"
             android:layout_margin="4sp"
             android:textSize="32sp"
-            android:onClick="onOperator"
+            android:onClick="onEqual"
             android:textStyle="bold"
             />
     </LinearLayout>
