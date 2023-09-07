@@ -11,7 +11,7 @@
     tools:layout_editor_absoluteY="-131dp">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvInput"
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:background="@color/calculations"
@@ -35,19 +35,21 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:paddingHorizontal="5sp"
-        android:paddingVertical="0sp"
         >
+
         <Button
             android:id="@+id/AC"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="2"
-            android:text="@string/all_clear"
-            android:textColor="@color/keybg"
             android:layout_marginHorizontal="5sp"
-            android:textSize="32sp"
+            android:paddingVertical="15sp"
+            android:layout_weight="2"
             android:onClick="OnDigit"
-            />
+            android:backgroundTint="@color/clear"
+            android:text="@string/all_clear"
+            android:textColor="@color/calculations"
+            android:textSize="32sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/modulus"
@@ -55,10 +57,12 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/modulus"
-            android:textColor="@color/numbers"
+            android:backgroundTint="@color/clear"
+            android:textColor="@color/calculations"
             android:layout_marginHorizontal="5sp"
             android:textSize="32sp"
             android:onClick="OnDigit"
+            android:textStyle="bold"
             />
         <Button
             android:id="@+id/divide"
@@ -66,10 +70,11 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/divide"
-            android:textColor="@color/numbers"
+            android:textColor="@color/keybg"
             android:layout_marginHorizontal="5sp"
             android:textSize="32sp"
             android:onClick="OnDigit"
+            android:textStyle="bold"
             />
     </LinearLayout>
 
@@ -85,10 +90,13 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/seven"
-            android:textColor="@color/numbers"
+            android:textColor="@color/calculations"
+            android:backgroundTint="@color/numbers"
             android:layout_margin="4sp"
             android:textSize="32sp"
             android:onClick="OnDigit"
+            android:paddingVertical="15sp"
+            android:textStyle="bold"
             />
         <Button
             android:id="@+id/eight"
@@ -96,10 +104,12 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/eight"
-            android:textColor="@color/numbers"
+            android:textColor="@color/calculations"
+            android:backgroundTint="@color/numbers"
             android:layout_margin="4sp"
-            android:textSize="48sp"
+            android:textSize="32sp"
             android:onClick="OnDigit"
+            android:textStyle="bold"
             />
         <Button
             android:id="@+id/nine"
@@ -107,10 +117,12 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/nine"
-            android:textColor="@color/numbers"
+            android:textColor="@color/calculations"
+            android:backgroundTint="@color/numbers"
             android:layout_margin="4sp"
             android:textSize="32sp"
             android:onClick="OnDigit"
+            android:textStyle="bold"
             />
         <Button
             android:id="@+id/multiply"
@@ -118,10 +130,11 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/multiply"
-            android:textColor="@color/numbers"
+            android:textColor="@color/keybg"
             android:layout_margin="4sp"
             android:textSize="32sp"
             android:onClick="OnDigit"
+            android:textStyle="bold"
             />
     </LinearLayout>
 
@@ -137,10 +150,13 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/four"
-            android:textColor="@color/numbers"
+            android:textColor="@color/calculations"
+            android:backgroundTint="@color/numbers"
             android:layout_margin="4sp"
             android:textSize="32sp"
             android:onClick="OnDigit"
+            android:paddingVertical="15sp"
+            android:textStyle="bold"
             />
         <Button
             android:id="@+id/five"
@@ -148,10 +164,12 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/five"
-            android:textColor="@color/numbers"
+            android:textColor="@color/calculations"
+            android:backgroundTint="@color/numbers"
             android:layout_margin="4sp"
-            android:textSize="48sp"
+            android:textSize="32sp"
             android:onClick="OnDigit"
+            android:textStyle="bold"
             />
         <Button
             android:id="@+id/six"
@@ -159,10 +177,12 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/six"
-            android:textColor="@color/numbers"
+            android:textColor="@color/calculations"
+            android:backgroundTint="@color/numbers"
             android:layout_margin="4sp"
             android:textSize="32sp"
             android:onClick="OnDigit"
+            android:textStyle="bold"
             />
         <Button
             android:id="@+id/subtract"
@@ -170,10 +190,11 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/subtract"
-            android:textColor="@color/numbers"
+            android:textColor="@color/keybg"
             android:layout_margin="4sp"
             android:textSize="32sp"
             android:onClick="OnDigit"
+            android:textStyle="bold"
             />
     </LinearLayout>
 
@@ -189,10 +210,13 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/one"
-            android:textColor="@color/numbers"
+            android:textColor="@color/calculations"
+            android:backgroundTint="@color/numbers"
             android:layout_margin="4sp"
             android:textSize="32sp"
             android:onClick="OnDigit"
+            android:paddingVertical="15sp"
+            android:textStyle="bold"
             />
         <Button
             android:id="@+id/two"
@@ -200,10 +224,12 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/two"
-            android:textColor="@color/numbers"
+            android:textColor="@color/calculations"
+            android:backgroundTint="@color/numbers"
             android:layout_margin="4sp"
-            android:textSize="48sp"
+            android:textSize="32sp"
             android:onClick="OnDigit"
+            android:textStyle="bold"
             />
         <Button
             android:id="@+id/three"
@@ -211,10 +237,12 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/three"
-            android:textColor="@color/numbers"
+            android:textColor="@color/calculations"
+            android:backgroundTint="@color/numbers"
             android:layout_margin="4sp"
             android:textSize="32sp"
             android:onClick="OnDigit"
+            android:textStyle="bold"
             />
         <Button
             android:id="@+id/plus"
@@ -222,10 +250,59 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/plus"
-            android:textColor="@color/numbers"
+            android:textColor="@color/keybg"
             android:layout_margin="4sp"
             android:textSize="32sp"
             android:onClick="OnDigit"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="5sp"
+        >
+        <Button
+            android:id="@+id/zero"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="@string/zero"
+            android:textColor="@color/calculations"
+            android:backgroundTint="@color/clear"
+            android:layout_margin="4sp"
+            android:textSize="32sp"
+            android:onClick="OnDigit"
+            android:paddingVertical="15sp"
+            android:textStyle="bold"
+            />
+        <Button
+            android:id="@+id/point"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/point"
+            android:textColor="@color/calculations"
+            android:backgroundTint="@color/numbers"
+            android:layout_margin="4sp"
+            android:textSize="32sp"
+            android:onClick="OnDigit"
+            android:textStyle="bold"
+            />
+        <Button
+            android:id="@+id/equal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/equal"
+            android:textColor="@color/keybg"
+            android:backgroundTint="@color/clear"
+            android:layout_margin="4sp"
+            android:textSize="32sp"
+            android:onClick="OnDigit"
+            android:textStyle="bold"
             />
     </LinearLayout>
 

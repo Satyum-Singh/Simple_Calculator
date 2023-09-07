@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.Calculator" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/numbers</item>
+        <item name="colorPrimary">@color/operations</item>
         <item name="colorPrimaryVariant">@color/operations</item>
         <item name="colorOnPrimary">@color/clear</item>
         <!-- Secondary brand color. -->
