@@ -14,7 +14,7 @@
         android:id="@+id/tvInput"
         android:layout_width="match_parent"
         android:layout_height="300sp"
-        android:background="@color/calculations"
+        android:background="@drawable/calculation_block"
         android:fontFamily="@font/poppins_semibold"
         android:gravity="end|bottom"
         android:layoutDirection="ltr"
@@ -34,6 +34,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:background="@drawable/shape"
         >
         <LinearLayout
             android:layout_width="match_parent"
@@ -57,19 +58,6 @@
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/modulus"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="@string/modulus"
-                android:backgroundTint="@color/clear"
-                android:textColor="@color/calculations"
-                android:layout_marginHorizontal="5sp"
-                android:textSize="32sp"
-                android:onClick="OnDigit"
-                android:textStyle="bold"
-                />
-            <Button
                 android:id="@+id/divide"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -79,6 +67,19 @@
                 android:layout_marginHorizontal="5sp"
                 android:textSize="32sp"
                 android:onClick="onOperator"
+                android:textStyle="bold"
+                />
+
+            <Button
+                android:id="@+id/modulus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/modulus"
+                android:textColor="@color/calculations"
+                android:layout_marginHorizontal="5sp"
+                android:textSize="32sp"
+                android:onClick="OnDigit"
                 android:textStyle="bold"
                 />
         </LinearLayout>
@@ -182,12 +183,11 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/six"
-                android:textColor="@color/calculations"
-                android:backgroundTint="@color/numbers"
+                android:textColor="@color/white"
                 android:layout_margin="4sp"
                 android:textSize="32sp"
                 android:onClick="OnDigit"
-                android:textStyle="bold"
+                android:textStyle="normal"
                 />
             <Button
                 android:id="@+id/subtract"
@@ -268,7 +268,6 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:paddingHorizontal="5sp"
-            android:background=""
             >
             <Button
                 android:id="@+id/zero"
@@ -278,11 +277,12 @@
                 android:text="@string/zero"
                 android:textColor="@color/calculations"
                 android:background="@drawable/round_btn_numbers"
+                android:backgroundTint="@color/keybg"
+                android:backgroundTintMode="multiply"
                 android:layout_margin="4sp"
                 android:textSize="32sp"
                 android:onClick="OnDigit"
                 android:paddingVertical="15sp"
-                android:textStyle="bold"
                 />
             <Button
                 android:id="@+id/point"
@@ -303,14 +303,23 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/equal"
-                android:textColor="@color/keybg"
-                android:backgroundTint="@color/clear"
+                android:textColor="@color/pure_white"
+                android:background="@drawable/equal_round_btn"
                 android:layout_margin="4sp"
                 android:textSize="32sp"
                 android:onClick="onEqual"
-                android:textStyle="bold"
                 />
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:paddingTop="20dp"
+            android:text="Swipe up to exit"
+            android:textAlignment="center"
+            />
     </LinearLayout>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

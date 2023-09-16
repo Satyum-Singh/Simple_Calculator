@@ -8,9 +8,22 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="calculations">#191A19</color>
-    <color name="keybg">#729687</color>
     <color name="numbers">#D8E9A8</color>
-    <color name="operations">#4E9F3D</color>
     <color name="clear">#FEA82F</color>
     <color name="num_key_bg">#A9C1AB</color>
+
+    <color name="keybg_light">#729687</color>
+    <color name="pure_white">#EAEEEC</color>
+    <color name="dull_white">#A9C1AB</color>
+    <color name="lime_g">#167234</color>
+    <color name="light_g">#4AAD37</color>
+    <color name="dark_g">#2F9331</color>
+    <color name="dark_black">#131e1d</color>
+
+    <color name="operations">#2CC18A</color>
+    <color name="keybg">#131E1D</color>
+    <color name="calc_num">#EAEEEC</color>
+    <color name="bg_num">#FFFFFF</color>
+    <color name="dark_sea">#0F3443</color>
+    <color name="light_sea">#34E89E</color>
 </resources>
